@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title> Lakshya Sardana</title>
+        <!--linking the stylesheet that has all the css -->
+        <link rel="stylesheet" href="mystyle.css" typ="text/css" />
+
+        <style>
+            #main{
+              background-image: url('logo.jpg');
+              background-repeat: no-repeat;
+              height: 800px;
+              padding-left: 500px;
+            }
+          </style> 
+  
+
+    </head>
+
+    <body>
+
+
+            <!-- the side navbar-->
+            <div id="mySidenav" class="sidenav">
+              <a class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="qual.html">Qualifications</a>
+              <a href="skills.html">Skillset</a>
+              <a href="experience.html">Past work experience</a>
+              <a href="edu.html">Education</a>
+            </div>
+    
+            <!--link back to the homepage-->
+            <div style="float:right;">
+                <a style=" color:#CBB989;" href="home.html">Home</a>
+            </div>
+            
+            <!--the hamburger button-->
+            <span style="font-size:20px; color:#CBB989; cursor:pointer";  onclick="openNav()" >&#9776; Discover </span>
+            <div id="main">
+            <p class="p1"> Contact Me</p>
+            <p id="contact">Email me @ lakshya.sardana98@gmail.com  &nbsp;
+            <a href="https://gmail.com"  target="_newtab" title="click to email" style="color:#B79347">click to email</a></p>
+            <p id="contact"> Phone: <i style="color: #B79347">(250) 667-2572</i></p>
+            </div>
+
+            
+         <!--openNav() to increase the width of the sidebar(i.e. my side nav that has all the lin ks for other webpages)-->
+         <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("main").style.marginLeft= "250px"; 
+            }
+            /*get the width of the side navbar to zero, on click of the x-sign with unicode &times; */
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+    
+        </script>
+    
+            
+
+    </body>
+</html>

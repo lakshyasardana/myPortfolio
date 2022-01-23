@@ -1,0 +1,96 @@
+
+html{
+    background-color: black;
+}
+
+
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+top: 0;
+left: 0;
+background-color:#DEDDDE;
+overflow-x: hidden;
+transition: 1.5s;
+padding-top: 60px;
+}
+  
+  .sidenav a {
+  padding: 8px 8px 10px 38px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #CBB989;
+  display: block;
+  transition: 0.2s;
+}
+
+  .sidenav a:hover {
+    background-color: #CBB989;
+    color: #81571E;
+  }
+
+  .p1{
+    font-family: "Sofia", sans-serif;
+    font-size: 45px;
+    text-shadow: 2px 2px 2px #CBB989;
+    color: #A7967D;
+    text-align:left;
+
+  }
+
+  .p2{
+    font-family: "Sofia", sans-serif;
+    font-size: 45px;
+    text-shadow: 2px 2px 2px #CBB989;
+    color: #A7967D;
+    text-align:center;
+
+  }
+/*
+  .demo1{
+    color:red;
+  }*/
+
+  .collapsible {
+    background-color: transparent;
+    color: #B79347;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 22px;
+  }
+  
+ /* .active, .collapsible:hover {
+    background-color: dark rgb(6, 27, 27);
+  }*/
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: black;
+    color: #CBB989;
+  }
+
+  ul li{
+    color: #CBB989;
+    width: 100%;
+    font-size:20px;
+  }
+
+  #info {
+    color: #CBB989;
+    display:block;
+    float: right;
+    text-decoration: none;
+  }
+
+  #contact{
+    color: #CBB989;
+    font-size: 30px;
+
+  }

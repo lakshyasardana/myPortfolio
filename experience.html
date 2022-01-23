@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lakshya Sardana</title>
+        <!--linking the stylesheet that has all the css -->
+        <link rel="stylesheet" href="mystyle.css" typ="text/css" />
+
+        
+        <style>
+
+          #main{
+            background-image: url('logo.jpg');
+            background-repeat: no-repeat;
+            height: 800px;
+            padding-left: 500px;
+          }
+        </style> 
+    
+    </head>
+    <body>
+        <!-- the side nav bar-->
+        <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="qual.html">Qualifications</a>
+          <a href="skills.html">Skillset</a>
+          <a href="experience.html">Past work experience</a>
+          <a href="edu.html">Education</a>
+        </div>
+
+        <!--link back to the homepage-->
+        <div style="float:right;">
+            <a style=" color:#CBB989;" href="home.html">Home</a>
+        </div>
+        
+        <!--the hamburger button-->
+        <span style="font-size:20px; color:#CBB989; cursor:pointer";  onclick="openNav()" >&#9776; Discover </span>
+
+      <div id="main">
+        <p class="p1"> Past Work Experiences</p>
+        
+        <!--the collapsible dropdowns-->
+        <button type="button" class="collapsible">Manager, Freshslice Pizza</button>
+        <div class="content">
+          <p style="color:#81571E;">October,2017 - Current</p>
+          <ul>
+            <li>Training and scheduling the shifts of employees</li>
+            <li>Payroll Submission</li>
+            <li>Responsibility of dealing with Head Office like replying to checklists, emails, etc.</li>
+            <li>Advertising business and successfully attaining customers</li>
+            <li>Ordering and counting the inventory for Profit and loss biweekly</li>
+          </ul>
+        </div>
+        <button type="button" class="collapsible">Supervisor, Nordia Inc.</button>
+        <div class="content">
+          <p style="color:#81571E;">June,2018 - December,2019</p>
+          <ul>
+            <li>Lead, train and motivate employees effectively through innovative coaching methods to succeed in meeting all key performance indicators</li>
+            <li>Attend client calls when escalated</li>
+            <li>Remain familiar to the client's strategies, products and services as well as its competition</li>
+            <li>Monitor and analyze the results and reports to assess performance, attendance, attrition and identify performance gaps at the individual and team level; develop and implement solutions to address gaps and ensure balanced performance of leaders and agents</li>
+          </ul>
+        </div>
+        <button type="button" class="collapsible">Volunteer Services</button>
+        <div class="content">
+          <ul>
+            <li>Volunteered at  Indian Student Club at Vancouver Island University on September 2017</li>
+            <li>Volunteered Rock the VIU event at Vancouver Island University on September 2018</li>
+            <li>Organized Cultural Fest at Chitkara University, Punjab on August 2016</li>
+          </ul>
+        </div>
+      </div>
+
+        <!--JS code for the collapsibles to work-->
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        /* iterate through the lop for all the number of collapsibles being used*/
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {     /*toggle to being active if clicked and vice versa*/
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
+         
+     <!--openNav() to increase the width of the sidebar(i.e. my side nav that has all the lin ks for other webpages)-->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft= "250px"; 
+        }
+        /*get the width of the side navbar to zero, on click of the x-sign with unicode &times; */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0px"; 
+        }
+
+    </script>
+
+           
+    </body>
+
+</html>

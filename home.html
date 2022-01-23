@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> Lakshya Sardana</title>
+        <!--linking the stylesheet that has all the css -->
+        <link rel="stylesheet" href="mystyle.css" typ="text/css" />
+ 
+    </head>
+    <body>
+        <!--th side navbar-->
+
+        <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="qual.html">Qualifications</a>
+          <a href="skills.html">Skillset</a>
+          <a href="experience.html">Past work experience</a>
+          <a href="edu.html">Education</a>
+        </div>
+        <!--the hamburger button-->
+         <span style="font-size:20px; color:#CBB989; cursor:pointer" onclick="openNav();" > &#9776; Discover </span>
+         
+        <a href="contact.html" id="info" >Contact me</a>
+        <a href="https://github.com/lakshyasardana/lakshyasardana" id="info" target="_newtab"> Github  &nbsp; &nbsp;</a> 
+
+        <div id="main">
+         <!-- <h1 style="text-align:center; font-size:60px; text-decoration: underline; text-decoration-color: grey">Lakshya Sardana</h1> -->
+        <center> <img src="logo.jpg" alt="centerimage" height="400px" width="400px"> </center>
+          <p class="p2"> Few words about me</p>
+          <p style="color: #CBB989; text-align:center; font-size: 28px; padding-left:40px; padding-right:40px;"><i>
+             I am glad you are here, lets get to know something about myself!</br>
+            I am passionate about technology. I charge from active moments which are flavorful with variety, challenges
+             and improvisations, to moments of tranquility and stability. I consider myself a tolerant and respectful 
+             person with open mind. I love to listen to people stories and backgrounds and their experiences around
+             the world.</i>
+          </p>
+        </div>
+        
+        <!--openNav() to increase the width of the sidebar(i.e. my side nav that has all the lin ks for other webpages)-->
+        <script>                 
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft= "250px"; /*moving the contents to the right when mysidenav expands*/
+          /*document.body.style.backgroundColor="rgba(0,0,0,0)"; //keeping the background color ofall contents in div tag black even when the navbar opens*/
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0"; /*re-adjusting back to the original size of the webpage*/
+          /*document.body.style.backgroundColor= "black";*/
+
+        }
+        </script>
+
+           
+        </body>
+
+</html>
+

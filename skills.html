@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lakshya Sardana</title>
+        <!--linking the stylesheet that has all the css -->
+        <link rel="stylesheet" href="mystyle.css" typ="text/css" />
+
+        <style>
+
+          #main{
+            background-image: url('logo.jpg');
+            background-repeat: no-repeat;
+            height: 800px;
+            padding-left: 500px;
+          }
+        </style> 
+    
+    </head>
+    <body>
+        <!-- the side nav bar-->
+        <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="qual.html">Qualifications</a>
+          <a href="skills.html">Skillset</a>
+          <a href="experience.html">Past work experience</a>
+          <a href="edu.html">Education</a>
+        </div>
+
+        <!--link back to the homepage-->
+        <div style="float:right;">
+            <a style=" color:#CBB989;" href="home.html">Home</a>
+        </div>
+        
+        <!--the hamburger button-->
+        <span style="font-size:20px; color:#CBB989; cursor:pointer";  onclick="openNav()" >&#9776; Discover </span>
+
+    <div id="main">
+        <p class="p1"> Skills and Abilities</p>
+        
+        <!--the collapsible dropdowns-->
+        <button type="button" class="collapsible">Technical Skills</button>
+        <div class="content">
+            <ul>
+                <li>Computer Languages: C++, HTML5, CSS, JavaScript, PHP, MySQL</li>
+                <li>Database Management Tool: Oracle RDBMS</li>
+                <li>Version Control Tool: GIT</li>
+                <li>Operating Systems: Windows, Linux</li>
+                <li>Content Management System: Notepad, WordPad, Visual Studio Code</li>
+                <li>Methodology: Agile, Waterfall</li>
+            </ul>
+        </div>
+        <button type="button" class="collapsible">Communications and Customer Satisfaction</button>
+        <div class="content">
+            <ul>
+                <li>Communicated and interacted with customers by professionalism and warmth to recommend best deals</li>
+                <li>Managed inquiries for sales resulting in a high level of customer satisfaction</li>
+                <li>Communicated, collaborated and ﬁrmly presented ideas to teams for completion of projects at work and enjoyed the teamwork</li>
+                <li>Built a well-organized and motivating work environment for the team members through shared experience and relaxation techniques</li>	
+            </ul>
+        </div>
+    </div>
+        <!--JS code for the collapsibles to work-->
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        /* iterate through the lop for all the number of collapsibles being used*/
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {     /*toggle to being active if clicked and vice versa*/
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
+         
+     <!--openNav() to increase the width of the sidebar(i.e. my side nav that has all the lin ks for other webpages)-->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft= "250px"; 
+        }
+        /*get the width of the side navbar to zero, on click of the x-sign with unicode &times; */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+    </script>
+
+           
+    </body>
+
+
+
+</html>

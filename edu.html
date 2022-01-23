@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lakshya Sardana</title>
+        <!--linking the stylesheet that has all the css -->
+        <link rel="stylesheet" href="mystyle.css" typ="text/css" />
+
+
+        <style>
+            .container {
+             position: relative;
+              width: 50%;
+            }
+            
+            .image {
+              opacity: 1;
+              display: block;
+              width: 100%;
+              height: auto;
+              transition: .5s ease;
+              backface-visibility: hidden;
+            }
+            
+            .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+            
+            .container:hover .image {
+              opacity: 0.3;
+            }
+            
+            .container:hover .middle {
+              opacity: 1;
+            }
+            
+            .text {
+              background-color: black;
+              color: #81571E;
+              font-size: 16px;
+              padding: 16px 32px;
+            }
+            </style>
+    
+
+    <style>
+      #main{
+        background-image: url('logo.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style> 
+
+    </head>
+    <body>
+        <!-- the side navbar-->
+        <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="qual.html">Qualifications</a>
+          <a href="skills.html">Skillset</a>
+          <a href="experience.html">Past work experience</a>
+          <a href="edu.html">Education</a>
+        </div>
+
+        <!--link back to the homepage-->
+        <div style="float:right;">
+            <a style=" color:#CBB989;" href="home.html">Home</a>
+        </div>
+        
+        <!--the hamburger button-->
+        <span style="font-size:20px; color:#CBB989; cursor:pointer";  onclick="openNav()" >&#9776; Discover </span>
+
+    <div id="main">
+        <p class="p2"> Education</p>
+
+        
+        <!--Holy angels-->
+        <div class="container">
+            <img src="holy_angels.jpg" alt="Avatar" class="image" style="width:300px; height:200px;">
+            <div class="middle">
+              <div class="text">Holy Angels School, Rajpura<br>
+                                High School
+              </div>
+            </div>
+          </div>
+
+        <!--Scholars-->
+        <div class="container">
+            <img src="scholars.jpg" alt="Avatar" class="image" style="width:300px; height:200px;">
+            <div class="middle">
+              <div class="text">Scholars Public School<br>
+                                Senior Secondary, 2013-2015
+              </div>
+            </div>
+          </div>
+
+        <!--Chitkara-->
+        <div class="container">
+            <img src="chitkara.jpg" alt="Avatar" class="image" style="width:300px; height:200px;">
+            <div class="middle">
+                <div class="text">Chitkara University<br>
+                                  Bachelors of Engineering(Computer Science & Engineering), 2015-2019
+                </div>
+            </div>
+          </div>
+
+        <!--Alicante-->
+        <div class="container">
+            <img src="alicante.jpg" alt="Avatar" class="image" style="width:300px; height:200px;">
+            <div class="middle">
+                <div class="text">University of Alicante, Spain<br>
+                                  Semester Exchangee Program
+                 </div>
+            </div>
+          </div>
+
+        <!--VIU-->
+        <div class="container">
+            <img src="viu.jpg" alt="Avatar" class="image" style="width:300px; height:200px;">
+            <div class="middle">
+                <div class="text">Vancouver Island University<br>
+                                  Diploma in Computing Science, 2017-2019
+                </div>
+            </div>
+          </div>
+    </div>
+        
+     <!--openNav() to increase the width of the sidebar(i.e. my side nav that has all the lin ks for other webpages)-->
+     <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft= "250px"; 
+        }
+        /*get the width of the side navbar to zero, on click of the x-sign with unicode &times; */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+    </script>
+
+</html>

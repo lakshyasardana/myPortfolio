@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lakshya Sardana</title>
+        <!--linking the stylesheet that has all the css -->
+        <link rel="stylesheet" href="mystyle.css" typ="text/css" />
+
+        <style>
+          #main{
+            background-image: url('logo.jpg');
+            background-repeat: no-repeat;
+            height: 800px;
+            padding-left: 500px;
+          }
+        </style> 
+    
+    </head>
+    <body>
+        <!-- the side navbar-->
+        <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="qual.html">Qualifications</a>
+          <a href="skills.html">Skillset</a>
+          <a href="experience.html">Past work experience</a>
+          <a href="edu.html">Education</a>
+        </div>
+
+        <!--link back to the homepage-->
+        <div style="float:right;">
+            <a style=" color:#CBB989;" href="home.html">Home</a>
+        </div>
+        
+        <!--the hamburger button-->
+        <span style="font-size:20px; color:#CBB989; cursor:pointer";  onclick="openNav()" >&#9776; Discover </span>
+        <div id="main">
+        <p class="p2"> Highlights of Qualification</p>
+        <ul id="ull-li">
+            <li>Reliable and skilled individual who keeps up a good pace at learning</li>
+            <li>Strong understanding and working experience of version control process using Git </li>
+            <li>Good understanding of UI and UX and experience using Balsamiq to create mockups</li>
+            <li>Extensive understanding and experience working with several languages such as HTML, CSS, JavaScript, C++, SQL, PHP</li>
+            <li>Good understanding of SASS</li>
+            <li>Good understanding of white and black box testing methodologies</li>
+            <li>Excellent communication and presentation skills</li>
+            <li>Organized and disciplined team player with the ability to excel in different positions with my hard work, positivity and dedication</li>
+            <li>Holds the ability to handle multiple tasks and skills in the areas of accessing client’s needs, effective presentation and time management</li>
+            <li>Strong ability to write software design applications and test procedures</li>
+            <li>Ability to learn and adapt to new tools and techniques quickly</li>
+            <li>Excellent ability to write clean and well-organized code in Linux and Windows environment</li>
+            <li>Experience in analyzing code quality and debugging defects of reasonable complexity</li>
+            <li>A strong team player who likes to take initiative to get the tasks completed much before deadline and keep up the coordination working in teams </li>
+
+        </ul>
+        </div>
+     <!--openNav() to increase the width of the sidebar(i.e. my side nav that has all the lin ks for other webpages)-->
+     <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft= "250px"; 
+        }
+        /*get the width of the side navbar to zero, on click of the x-sign with unicode &times; */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+    </script>
+
+           
+    </body>
+       <!--footer for the webpage with copyright-->
+      <!--  <footer style="color:grey; position:absolute; bottom:0px; width:100%; text-align:center; height:50px;">
+        &copy; Lakshya Sardana information.
+        </footer> -->
+
+
+</html>
