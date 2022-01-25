@@ -1,4 +1,4 @@
-Welcome to know about me.
+Get to know about me but in a style of a programmer......
 
 Expressing my interest in coding I self-coded my own portfolio and made it in a form of a website.
 ####HOMEPAGE####
